@@ -1,0 +1,162 @@
+dad's past sermons
+atheism
+come at it from a different angle
+
+
+flatland
+lots of small things
+neurons/gliders/semiconductors
+feels like there's one big thing (soul)
+
+All ages: I have a little more faith in our younger generation
+I think they're ready for advanced mathematics
+
+SERMON:
+
+overpopulation/underpopulation
+just right
+
+power transformers
+
+block stacker
+works kind of like DNA
+The DNA copier doesn't "know" anything.
+It's not going, "You're kidding me, they want me to copy this entire DNA sequence _again_?!"
+When you arrange the right molecules in a very precise way, copying DNA is just what happens
+
+
+world of objects: transmutation
+
+sound is a wave
+light is a particle
+eyes had to be constructed
+it just so happens that there are these particles flying around
+electromagnetic radiation
+the power station
+would you know that you were in an infinite grid of cells?
+
+
+eyes interact with light through reactions
+life is fragile: getting hit with an extra light particle
+
+blinker
+toad, Phoenix_1
+block, beehive, mickey mouse
+R-Pentomino: first few steps manually
+zoom out
+bacteria growing
+glider
+spaceships
+Gosper glider gun
+dueling glider guns
+Glider synthesis
+
+God started the universe but has been hands-off since then!
+reset it and play it forward
+
+Most complex object in the universe
+(aliens are now U-U doctrine)
+
+
+figure 8
+tumbler
+110 Honey Farm Hassler
+
+
+
+
+Breeder
+Caterpillar
+Pi calculator
+Sir Robin
+Pentadecathlon
+https://conwaylife.com/wiki/Queen_bee
+grayship/spacefiller collision with glider
+
+
+
+angel
+
+speed of light:
+Suppose a certain pattern is contained in a 100-by-100-pixel square. Everything outside the square is in the off state. No matter what the structure of the pattern, it can influence only the pixels bordering the square in the next generation. It will then be contained in a 102-by-102-pixel square. At very most, a pattern can grow one pixel per generation in any direction. 
+
+Now, let's think of all the ways this universe is different from our own. There's no gravity, or electromagetism... there isn't even mass or matter! There's no true _motion_ in this universe, only propagation. It's ripples on a pond: the water isn't moving as much as energy is moving through the water. In CGOL, only information can move.
+
+Our universe 
+
+baking soda and vinegar
+single-cell organisms: mere automata?
+Rene Descartes: all animals are automata
+animal-machines: cannot think, are not conscious, but can feel?
+Vitalism
+Ancient Egyptians: heart was the center of consciousness, pulled out the brain before mummification
+Aristotle: the brain cools the blood
+
+Here's the thing about souls: they just don't seem necessary.
+We don't know everything about how the human body works, especially the brain, but so far, everything we've observed _can_ be explained by what we see.
+With a trillion synapses, you don't _need_ a soul. That's good enough. Like, if I found out I only had a few billion synapses, I'd say, eh, not good enough. I still want a soul. But a trillion? I think I'm all set.
+I mean, maybe you need a soul to get into the afterlife. In that case, I probably still want one. But if there is an afterlife, I don't think they'd require souls.
+
+
+Leibniz's Mill
+Does evil exist?
+Is pain actually bad?
+Pain is just a signal that tells you to stop doing something
+
+Alright, let's just rip the Band-Aid off: no, you don't have free will. Sorry.
+But I also think free will means a lot of things to different people, so your conception of free will might be compatible with a fully deterministic universe.
+
+So, while I believe the universe is deterministic, I still think you're actually making decisions. Here's an example of a pretty difficult decision: let's say it's Saturday night, and you're trying to decide whether to go to the monster truck rally or the opera. You run through several different considerations: maybe you'd prefer the monster truck rally but your wife prefers the opera. Maybe the opera house is closer, but it's more crowded--lots to consider. Now, in one sense, you don't have free will because at the sub-microscopic level, your brain is just shooting little gliders all over and they're exploding and coalescing into blocks and beehives in very specific ways, and if we reset the universe to the moment that you make this decision, you're going to arrive at the same place every time. Of course, keep in mind that I'm talking about the exact same situation. I don't mean you'll always pick the monster truck rally every Saturday, because obviously your wife would get increasingly annoyed. I'm talking about rewinding the entire universe, including your memories, and letting it all play out again.
+
+Let's say you decide to go to the monster truck rally, but I send you a quick text and say, "Hey, I just ran a simulation of our entire universe to see how things play out, and I saw you get into a big fight with your wife because she doesn't think you're listening to her." Then, assuming you believed me, you might say, wow, thanks, I guess we should go to the opera." It's not like you were _fated_ to go to the monster truck rally. Going to the monster truck rally is just _what happens_ when all the particles in the universe have a very specific set of momentum vectors. But my text message to you put the universe into a different configuration.
+
+Personally, if I have the ability to make informed decisions, and change those decisions in light of new information, I don't need free will! I'm all set! And I'm not even sure I know what people mean when they talk about free will, if they're not talking about making informed decisions. I mean, maybe they want the ability to discard their considerations and make a decision _in spite_ of their judgment, but is that really something you have a spiritual attachment to?
+
+Okay, I'm joking, but sometimes, I admit: it's fun to make decisions in spite of good judgment. But I'd argue that you don't need free will for that. I'd say, in that case, one of the factors you're weighing in your decision is "does this make me feel free?" This isn't some special, transcendent consideration that requires a soul or anything. It's still just made of little gliders and blocks.
+
+So, if we literally rewound time, including all your memories--every single thing exactly the same, and no text messages from the future--and you feel like, eh, I think I really could have chosen differently... was that really an informed decision you made? It sounds like you're just choosing randomly. Of course, maybe there's an element of true randomness in our universe--maybe there are quantum effects going on--but I don't think randomness gives you free will.
+
+I've got free will all figured out, but consciousness is still a mystery.
+
+How strange it is to be anything at all...
+
+
+
+
+Kristin
+
+free will?
+consciousness
+
+evil in CGOL
+
+chalice lighting
+
+tracey: title and blurb
+four different songs
+
+talking heads: how bizarre?
+
+glider
+
+
+--- Oedipus Rex
+
+
+I think for many people, when they hear a challenge to free will, the imagine something like fate. Like how Oedipus Rex was fated to kill his father and marry his mother. But that's very different. If someone told
+
+Let's say we have an instance of Conway's Game of Life that actually contains conscious and intelligent beings. And let's say I ran the simulation and determined that one of these being is going to kill his father and marry his mother. So I reset the simulation and send a message to this Oedipus Rex automaton and gave him a heads-up.
+The only way I have of communicating with him would be to introduce changes into his universe! Maybe these beings communicate using streams of gliders, so I figure out their language and I send a stream of gliders with this message. I have now changed the universe! The simulation I ran to make this prediction is now an entirely different one than I'm now running! If this Oedipus-automaton still somehow kills his father and marries his mother, that would just be a horrible coincidence.
+Does that mean he actually has free will? I think it depends on how you define free will. If you're talking about the ability to make informed and rational decisions, then yes, I think that exists. And honestly, what more do you want?
+
+So if you tell me you're making decisions through the power of free will, I'd say, well, that sounds nice, but I make decisions by actually weighing all the factors and arriving at a rational conclusion, and if you give me the exact same decision under the exact same circumstances with the same exact set of memories, I'll make the exact same decision.
+
+----
+
+The Great Machine
+A Window to a Parallel World
+
+As humans, we live in a world of cats and cars and chairs and countless other discrete things, each with their own identity. This is the world we're meant to live in, but every once in a while, it helps to take a step outside of it. Today we'll look at an abstract mathematical universe wildly different from our own. Can this universe support life? If so, what can it teach us about our own human experiences?
+
+In 1970, mathematician John Conway invented the "Game of Life". No, not the board game. Conway's Game of Life is a computer simulation of an infinite two-dimensional grid, and it's dubiously a "game" since it evolves on its own, requiring no human input once started. Ameteur and professional mathematicians have been fascinated with the Game of Life since its creation, and have developed ever more complicated patterns within it. What can this simulated world tell us about our own?
+
