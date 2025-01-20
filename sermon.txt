@@ -11,7 +11,7 @@ Here's the thing, I went to college for math, but I also think the way math is t
 
 Today I'm going to be talking a lot about these things called cellular automata, and one in particular that's called "Conway's Game of Life". I actually don't really like that name, partly because it sounds like the board game, which it has absolutely nothing to do with. It's also not really a game. It's sometimes called a "zero-player game", and you'll see why.
 
-
+Conway's Game of Life is an infinite grid of cells, and each cell in the grid can either be alive or dead. I'll use green for live cells and black for dead ones.
 
 
 overpopulation/underpopulation
@@ -43,37 +43,39 @@ life is fragile: getting hit with an extra light particle
 blinker
 toad, Phoenix_1
 block, beehive, mickey mouse
+
+Still lives: stay like this until something interacts with them
+Zero-player game: set the initial conditions and let them play out
+As you'll see, other patterns do some kind of crazy things, so still lives aren't guaranteed to last forever
+Boring! Who cares about Mickey Mouse. Mickey Mouse doesn't do anything.
+
 R-Pentomino: first few steps manually
 zoom out
-bacteria growing
+bacteria growing, or ants moving around
 glider
+
+Gliders are basically why the Game of Life is interesting enough to keep people interested for 55 years
+Gliders look kind of similar to the R-pentomino
+Reminder: all of this is happening with just 2 rules about when the cells turn on and off!
+Keep in mind the grid is actually infinite, and those gliders are still moving, it's just that we lost sight of them
+
 spaceships
 Gosper glider gun
-dueling glider guns
-Glider synthesis
+Glider synthesis, ship factory
 
 God started the universe but has been hands-off since then!
 reset it and play it forward
+modifying the board, performing a miracle
 
 Most complex object in the universe
 (aliens are now U-U doctrine)
 
 
-figure 8
-tumbler
-110 Honey Farm Hassler
-
-
-
-
 Breeder
-Caterpillar
 Pi calculator
-Sir Robin
-Pentadecathlon
 https://conwaylife.com/wiki/Queen_bee
 grayship/spacefiller collision with glider
-
+dueling glider guns
 
 
 angel
@@ -147,6 +149,14 @@ glider
 
 
 flatland
+github
+thunderscapefamiliar
+Pentadecathlon
+Sir Robin
+figure 8
+tumbler
+110 Honey Farm Hassler
+Caterpillar
 
 
 --- Oedipus Rex
