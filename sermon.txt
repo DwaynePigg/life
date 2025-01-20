@@ -2,16 +2,17 @@ dad's past sermons
 atheism
 come at it from a different angle
 
+I'm going to do things a little differently today. I have a little more faith in our younger generation, so during our time for all ages, I'm going to be explaining some advanced mathematics. Well, kind of.
+So, where are the kids in the audience? How old are you?
 
-flatland
-lots of small things
-neurons/gliders/semiconductors
-feels like there's one big thing (soul)
+How do you feel about your math classes? Do you like them?
+I know, I know, your parents are here, so you can't be totally honest.
+Here's the thing, I went to college for math, but I also think the way math is taught in school kind of sucks. I remember learning quadratic equations in middle school and thinking, wow, this is really complicated, and why does anyone actually care? Well, I learned much later that quadratic equations are used to model the trajectory of thrown objects. I get that math is really useful, but I feel like if I actually understood _why_ it's useful, I would have cared a lot more!
 
-All ages: I have a little more faith in our younger generation
-I think they're ready for advanced mathematics
+Today I'm going to be talking a lot about these things called cellular automata, and one in particular that's called "Conway's Game of Life". I actually don't really like that name, partly because it sounds like the board game, which it has absolutely nothing to do with. It's also not really a game. It's sometimes called a "zero-player game", and you'll see why.
 
-SERMON:
+
+
 
 overpopulation/underpopulation
 just right
@@ -98,6 +99,11 @@ With a trillion synapses, you don't _need_ a soul. That's good enough. Like, if 
 I mean, maybe you need a soul to get into the afterlife. In that case, I probably still want one. But if there is an afterlife, I don't think they'd require souls.
 
 
+lots of small things
+neurons/gliders/semiconductors
+feels like there's one big thing (soul)
+
+
 Leibniz's Mill
 Does evil exist?
 Is pain actually bad?
@@ -138,6 +144,9 @@ four different songs
 talking heads: how bizarre?
 
 glider
+
+
+flatland
 
 
 --- Oedipus Rex
