@@ -61,6 +61,9 @@ Keep in mind the grid is actually infinite, and those gliders are still moving, 
 
 spaceships
 Gosper glider gun
+
+This looks really complicated, but this is just _what happens_ when you set up the grid this way. Given the rules of the game, there's nothing else these cells can do.
+
 Glider synthesis, ship factory
 
 God started the universe but has been hands-off since then!

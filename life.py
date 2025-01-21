@@ -196,15 +196,15 @@ def bounds(width, height, pad_width, pad_height):
 
 
 if __name__ == '__main__':
-	file = 'rle/glider.cells'
+	file = 'rle/p144bigagun.rle'
 	live_cells, width, height = parselife.parse(file)
-	
+	live_cells = advance(live_cells, 144 * 4)
 	life = life_generator(live_cells)
 	create_animated_gif('output.gif', get_frames(
 		life,
-		3, 3, 10, 10,
-		48,  # steps
-		200,  # interval
-		48,  # scale
-		4,  # grid
+		218 - 25, 246 - 25, 15 + 50, 10 + 50,
+		144,  # steps
+		50,  # interval
+		8,  # scale
+		1,  # grid
 	))
