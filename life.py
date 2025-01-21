@@ -196,15 +196,18 @@ def bounds(width, height, pad_width, pad_height):
 
 
 if __name__ == '__main__':
-	file = 'rle/p144bigagun.rle'
+	file = 'rle/p416gun.rle'
 	live_cells, width, height = parselife.parse(file)
-	live_cells = advance(live_cells, 144 * 4)
+	# live_cells = advance(live_cells, 416 * 4)
 	life = life_generator(live_cells)
 	create_animated_gif('output.gif', get_frames(
 		life,
-		218 - 25, 246 - 25, 15 + 50, 10 + 50,
-		144,  # steps
-		50,  # interval
-		8,  # scale
-		1,  # grid
+		*bounds(width, height, 1, 1),
+		416,  # steps
+		20,  # interval
+		1,  # scale
+		0,  # grid
 	))
+
+# https://conwaylife.com/wiki/60P5H2V0
+# 218 - 25, 246 - 25, 15 + 50, 10 + 50,

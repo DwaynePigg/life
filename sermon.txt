@@ -37,6 +37,8 @@ the power station
 would you know that you were in an infinite grid of cells?
 
 
+55 years!
+
 eyes interact with light through reactions
 life is fragile: getting hit with an extra light particle
 
@@ -59,12 +61,17 @@ Gliders look kind of similar to the R-pentomino
 Reminder: all of this is happening with just 2 rules about when the cells turn on and off!
 Keep in mind the grid is actually infinite, and those gliders are still moving, it's just that we lost sight of them
 
-spaceships
 Gosper glider gun
 
 This looks really complicated, but this is just _what happens_ when you set up the grid this way. Given the rules of the game, there's nothing else these cells can do.
 
 Glider synthesis, ship factory
+
+People are crazy about CGOL. How long must this have taken someone to figure out?
+Instead of inventing things in the real world, they're inventing things in this simulation
+Pattern of the year
+
+--- HOMILY part 1
 
 God started the universe but has been hands-off since then!
 reset it and play it forward
