@@ -21,7 +21,7 @@ def create_png(
 		height: int,
 		scale: int,
 		grid: int = 0,
-		live_color: str = 'white',
+		live_color: str = 'lime',
 		dead_color: str = 'black',
 		grid_color: str = '#222',
 		draw_neighbor_counts=False,
@@ -90,16 +90,15 @@ def create_png(
 
 
 if __name__ == '__main__':
-	file = 'rle/x.cells'
+	file = 'rle/rpentomino.rle'
 	live_cells, width, height = parselife.parse(file)
 	live_cells = advance(live_cells, 0)
 	create_png(
-		'static/x.png',
+		'output.png',
 		live_cells,
-		-4, -4,  # x, y
-		width + 8, height + 8, # width, height
-		48,  # scale
+		-2, -2,  # x, y
+		width + 4, height + 4, # width, height
+		80,  # scale
 		4,  # grid
-		'lime', 'black', '#222',
 		# draw_neighbor_counts=(2, 1),
 	)

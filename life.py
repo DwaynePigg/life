@@ -158,12 +158,9 @@ def get_frames(
 	image = create_image(gen)
 	for f in range(frame_count - 1):
 		prev = live_cells
-		try:
-			for _ in range(generations_per_frame - 1):
-				next(life)
-			live_cells, gen = next(life)
-		except StopIteration:
-			break
+		for _ in range(generations_per_frame - 1):
+			next(life)
+		live_cells, gen = next(life)
 		live_cells = set(live_cells)
 		if live_cells == prev:
 			frame_duration = still_life_duration or frame_duration * (frame_count - f)
@@ -199,11 +196,15 @@ def bounds(width, height, pad_width, pad_height):
 
 
 if __name__ == '__main__':
-	file = 'rle/rpentomino.rle'
+	file = 'rle/glider.cells'
 	live_cells, width, height = parselife.parse(file)
+	
 	life = life_generator(live_cells)
-	create_animated_gif('output.gif',
-		get_frames(life, *bounds(width, height, 50, 50), 500, 100, 5, 1, info=True),
-		get_frames(life, *bounds(width, height, 50, 50), 200, 100, 5, 1, info=True, generations_per_frame=3),
-		get_frames(life, *bounds(width, height, 50, 50), 100, 100, 5, 1, info=True),
-	)
+	create_animated_gif('output.gif', get_frames(
+		life,
+		3, 3, 10, 10,
+		48,  # steps
+		200,  # interval
+		48,  # scale
+		4,  # grid
+	))

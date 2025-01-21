@@ -1,18 +1,15 @@
 	file = 'rle/gosper.rle'
 	live_cells, width, height = parselife.parse(file)
 	live_cells = advance(live_cells, 60)
-	create_animated_gif(
-		'output.gif',
-		live_cells,
-		-2, -2,  # x, y
-		width + 4, height + 18, # width, height
+	life = life_generator(live_cells)
+	create_animated_gif('output.gif', get_frames(
+		life,
+		-2, -2, width + 4, height + 18,
 		30,  # steps
-		200,  # interval
+		100,  # interval
 		20,  # scale
 		2,  # grid
-		# 'orange', 'blue', 'darkblue',
-		'lime', 'black', '#222',
-	)
+	))
 
 	file = 'sirrobin.rle'
 	live_cells, width, height = parselife.parse(file)
@@ -209,4 +206,15 @@
 		40,  # scale
 		4,  # grid
 		'lime', 'black', '#222',
+	)
+
+
+	file = 'rle/rpentomino.rle'
+	live_cells, width, height = parselife.parse(file)
+	life = life_generator(live_cells)
+	b = bounds(width, height, 50, 50)
+	create_animated_gif('output.gif',
+		get_frames(life, *b, 500, 100, 5, 1, info=True),
+		get_frames(life, *b, 200, 100, 5, 1, info=True, generations_per_frame=3),
+		get_frames(life, *b, 100, 100, 5, 1, info=True),
 	)
