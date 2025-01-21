@@ -3,6 +3,7 @@ import sys
 from collections import defaultdict
 from collections.abc import Iterable, Collection
 from dataclasses import dataclass
+from itertools import chain
 
 from PIL import Image, ImageDraw, ImageFont
 
@@ -17,6 +18,7 @@ NEIGHBORHOOD = [
 	(-1,  0),          (1,  0),
 	(-1, -1), (0, -1), (1, -1),
 ]
+FIXEDSYS = ImageFont.truetype('FSEX300.ttf', 16)
 
 @dataclass
 class Cell:
@@ -81,26 +83,53 @@ def write_cells_txt(grid: Grid, symbols: str = '.O'):
 		print(''.join(symbols[c] for c in row).rstrip(symbols[0]))
 
 
-def create_animated_gif(
-		file: FileType,
-		live_cells: Iterable[Coord],
+def test():
+	import os
+	file = 'rle/rpentomino.rle'
+	# -50, -24, 100, 48
+	live_cells, width, height = parselife.parse(file)
+	gen = 0
+	while True:
+		os.system('cls')
+		write_cells_txt(get_grid(live_cells, -50, -24, 100, 48), ['  ', '()'])
+		try:
+			if input(f"Generation {gen:<6} Population: {len(live_cells):<6}"):
+				break
+		except KeyboardInterrupt:
+			break
+		live_cells = list(generate(live_cells))
+		gen += 1
+
+
+def life_generator(live_cells, gen=0):
+	yield live_cells, gen
+	while True:
+		live_cells = list(generate(live_cells))
+		gen += 1
+		yield live_cells, gen
+
+
+def get_frames(
+		life: Iterable[tuple[Iterable[Coord], int]],
 		grid_x: int,
 		grid_y: int,
 		width: int,
 		height: int,
-		steps: int,
-		step_time: int,
+		frame_count: int,
+		frame_duration: int,
 		scale: int,
 		grid: int = 0,
-		live_color: str = 'black',
-		dead_color: str = 'white',
-		grid_color: str = 'lightgray',
+		live_color: str = 'lime',
+		dead_color: str = 'black',
+		grid_color: str = '#222',
+		generations_per_frame=1,
 		info=False,
-		generations_per_step=1):
+		still_life_duration=None):
+	
+	if info is True:
+		info = 'red'
 
-	font = ImageFont.truetype('FSEX300.ttf', 16)
-
-	def create_image(generation):
+	def create_image(gen):
 		image = Image.new('RGB', (width * scale - grid, height * scale - grid), dead_color)
 		draw = ImageDraw.Draw(image)
 		for x, y in live_cells:
@@ -120,29 +149,48 @@ def create_animated_gif(
 				draw.rectangle((0, y - grid + 1, width * scale, y), fill=grid_color)
 
 		if info:
-			draw.text((2, height * scale - 16), f"Generation {generation}", info, font=font)
-				
+			draw.text((2, height * scale - 16), f"Generation {gen}", info, font=FIXEDSYS)
+
 		return image
 
+	live_cells, gen = next(life)
 	live_cells = set(live_cells)
-	head = create_image(0)
-	frames = []
-	for step in range(1, steps):
-		gen = step * generations_per_step
+	image = create_image(gen)
+	for f in range(frame_count - 1):
 		prev = live_cells
-		live_cells = advance(live_cells, generations_per_step - 1)
-		live_cells = set(generate(live_cells))
-		print(f"{gen}/{steps * generations_per_step}", end='\r')
-		frames.append(create_image(gen))
-		if live_cells == prev:
-			step_time = [step_time] * step + [step_time * (steps - step - 1)]
+		try:
+			for _ in range(generations_per_frame - 1):
+				next(life)
+			live_cells, gen = next(life)
+		except StopIteration:
 			break
-	print('Saving GIF...')
+		live_cells = set(live_cells)
+		if live_cells == prev:
+			frame_duration = still_life_duration or frame_duration * (frame_count - f)
+			break
+		yield image, frame_duration
+		image = create_image(gen)
+
+	yield image, frame_duration
+
+
+def create_animated_gif(file, *frame_generators):
+	frames = chain.from_iterable(frame_generators)
+	head, duration0 = next(frames)
+	durations = [duration0]
+	images = []
+
+	for image, duration in frames:
+		images.append(image)
+		durations.append(duration)
+
+	# print(durations)
+
 	head.save(
 		file,
 		save_all=True,
-		append_images=frames,
-		duration=step_time,
+		append_images=images,
+		duration=durations,
 		loop=0)
 
 
@@ -150,36 +198,12 @@ def bounds(width, height, pad_width, pad_height):
 	return -pad_width, -pad_height, width + 2 * pad_width, height + 2 * pad_height
 
 
-def test():
-	import os
-	file = 'rle/rpentomino.rle'
-	# -50, -24, 100, 48
-	live_cells, width, height = parselife.parse(file)
-	gen = 0
-	while True:
-		os.system('cls')
-		write_cells_txt(get_grid(live_cells, -50, -24, 100, 48), ['  ', '()'])
-		try:
-			if input(f"Generation {gen:<6} Population: {len(live_cells):<6}"):
-				break
-		except KeyboardInterrupt:
-			break
-		live_cells = list(generate(live_cells))
-		gen += 1
-
-
 if __name__ == '__main__':
-	file = 'rle/blockstacker.rle'
+	file = 'rle/rpentomino.rle'
 	live_cells, width, height = parselife.parse(file)
-	create_animated_gif(
-		'output.gif',
-		live_cells,
-		# bounds(width, height, 1, 1),
-		341 - 80, 283 - 80, 160, 160,
-		630 * 6,  # steps
-		20,  # interval
-		3,  # scale
-		0,  # grid
-		'lime', 'black', '#222',
-		generations_per_step=1,
+	life = life_generator(live_cells)
+	create_animated_gif('output.gif',
+		get_frames(life, *bounds(width, height, 50, 50), 500, 100, 5, 1, info=True),
+		get_frames(life, *bounds(width, height, 50, 50), 200, 100, 5, 1, info=True, generations_per_frame=3),
+		get_frames(life, *bounds(width, height, 50, 50), 100, 100, 5, 1, info=True),
 	)
