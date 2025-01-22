@@ -90,9 +90,9 @@ def create_png(
 
 
 if __name__ == '__main__':
-	file = 'rle/rpentomino.rle'
+	file = 'rle/blinker.rle'
 	live_cells, width, height = parselife.parse(file)
-	live_cells = advance(live_cells, 0)
+	live_cells = advance(live_cells, 1)
 	create_png(
 		'output.png',
 		live_cells,
@@ -100,5 +100,5 @@ if __name__ == '__main__':
 		width + 4, height + 4, # width, height
 		80,  # scale
 		4,  # grid
-		# draw_neighbor_counts=(2, 1),
+		draw_neighborhood=(2, 0),
 	)

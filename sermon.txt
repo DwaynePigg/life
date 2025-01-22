@@ -19,7 +19,7 @@ overpopulation/underpopulation
 just right
 
 blinker
-toad, Phoenix_1
+toad, phoenix
 block, beehive, mickey mouse
 
 Still lives: stay like this until something interacts with them
@@ -43,11 +43,30 @@ This looks really complicated, but this is just _what happens_ when you set up t
 
 Glider synthesis, ship factory
 
-People are crazy about CGOL. How long must this have taken someone to figure out?
-Instead of inventing things in the real world, they're inventing things in this simulation
-Pattern of the year
+Isn't that just super satisfying?
+
 
 --- HOMILY part 1
+
+So you might see all these patterns and say, that's cool, but so what?
+And you'd have a point: CGOL has been around for 55 years, and people are still crazy about it.
+Instead of inventing things in the real world, they're inventing things in this simulation.
+There are still "Pattern of the year" contests.
+Recent, someone invented a kind of spaceship that moves like a knight in chess: up two spaces and over one. This was surprisingly difficult.
+
+But I think CGOL can give us a renewed understanding for how our world works.
+
+world of objects: transmutation
+
+particles and forces
+
+sound is a wave
+light is a particle
+eyes had to be constructed
+it just so happens that there are these particles flying around
+electromagnetic radiation
+
+
 
 power transformers
 haber-bosch process
@@ -59,20 +78,15 @@ It's not going, "You're kidding me, they want me to copy this entire DNA sequenc
 When you arrange the right molecules in a very precise way, copying DNA is just what happens
 
 
-world of objects: transmutation
-
-sound is a wave
-light is a particle
-eyes had to be constructed
-it just so happens that there are these particles flying around
-electromagnetic radiation
-the power station
 would you know that you were in an infinite grid of cells?
 
 
 eyes interact with light through reactions
-life is fragile: getting hit with an extra light particle
 
+
+
+life is fragile: getting hit with an extra light particle
+perpetual motion
 
 
 God started the universe but has been hands-off since then!
@@ -122,6 +136,8 @@ Leibniz's Mill
 Does evil exist?
 Is pain actually bad?
 Pain is just a signal that tells you to stop doing something
+
+---- THE GREAT MACHINE
 
 Alright, let's just rip the Band-Aid off: no, you don't have free will. Sorry.
 But I also think free will means a lot of things to different people, so your conception of free will might be compatible with a fully deterministic universe.
