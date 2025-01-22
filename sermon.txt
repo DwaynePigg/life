@@ -13,34 +13,10 @@ Today I'm going to be talking a lot about these things called cellular automata,
 
 Conway's Game of Life is an infinite grid of cells, and each cell in the grid can either be alive or dead. I'll use green for live cells and black for dead ones.
 
+55 years!
 
 overpopulation/underpopulation
 just right
-
-power transformers
-
-block stacker
-works kind of like DNA
-The DNA copier doesn't "know" anything.
-It's not going, "You're kidding me, they want me to copy this entire DNA sequence _again_?!"
-When you arrange the right molecules in a very precise way, copying DNA is just what happens
-
-
-world of objects: transmutation
-
-sound is a wave
-light is a particle
-eyes had to be constructed
-it just so happens that there are these particles flying around
-electromagnetic radiation
-the power station
-would you know that you were in an infinite grid of cells?
-
-
-55 years!
-
-eyes interact with light through reactions
-life is fragile: getting hit with an extra light particle
 
 blinker
 toad, Phoenix_1
@@ -72,6 +48,32 @@ Instead of inventing things in the real world, they're inventing things in this 
 Pattern of the year
 
 --- HOMILY part 1
+
+power transformers
+haber-bosch process
+
+block stacker
+works kind of like DNA
+The DNA copier doesn't "know" anything.
+It's not going, "You're kidding me, they want me to copy this entire DNA sequence _again_?!"
+When you arrange the right molecules in a very precise way, copying DNA is just what happens
+
+
+world of objects: transmutation
+
+sound is a wave
+light is a particle
+eyes had to be constructed
+it just so happens that there are these particles flying around
+electromagnetic radiation
+the power station
+would you know that you were in an infinite grid of cells?
+
+
+eyes interact with light through reactions
+life is fragile: getting hit with an extra light particle
+
+
 
 God started the universe but has been hands-off since then!
 reset it and play it forward
