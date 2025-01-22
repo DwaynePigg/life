@@ -38,13 +38,11 @@ def generate(live_cells: Iterable[Coord]):
 
 
 def life_generator(live_cells, gen=0):
-	yield live_cells, gen
-	print(gen)
 	while True:
-		live_cells = list(generate(live_cells))
-		gen += 1
 		print(gen)
 		yield live_cells, gen
+		live_cells = list(generate(live_cells))
+		gen += 1
 
 
 def advance(live_cells: Iterable[Coord], steps: int):

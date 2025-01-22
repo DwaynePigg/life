@@ -63,8 +63,6 @@ Isn't that just super satisfying?
 
 --- HOMILY part 1
 
-no motion
-
 So you might see all these patterns and say, that's cool, but so what?
 And you'd have a point: CGOL has been around for 55 years, and people are still crazy about it.
 Instead of inventing things in the real world, they're inventing things in this simulation.
@@ -73,14 +71,21 @@ Recent, someone invented a kind of spaceship that moves like a knight in chess: 
 
 But I think CGOL can give us a renewed understanding for how our world works.
 
-world of objects: transmutation
+First let's talk about how this universe is different from ours:
+In our universe, we have 17 kinds of fundamental particles and 4 fundamental forces (that we know of).
 
-particles and forces
+differences:
+life is fragile: getting hit with an extra light particle
+perpetual motion
+
+world of objects: transmutation
+Do chairs exist?
 
 sound is a wave
 light is a particle
 eyes had to be constructed
 it just so happens that there are these particles flying around
+eyes interact with light through reactions
 electromagnetic radiation
 
 
@@ -98,13 +103,6 @@ When you arrange the right molecules in a very precise way, copying DNA is just 
 would you know that you were in an infinite grid of cells?
 
 
-eyes interact with light through reactions
-
-
-
-life is fragile: getting hit with an extra light particle
-perpetual motion
-
 
 God started the universe but has been hands-off since then!
 reset it and play it forward
@@ -120,8 +118,6 @@ https://conwaylife.com/wiki/Queen_bee
 grayship/spacefiller collision with glider
 dueling glider guns
 
-
-angel
 
 speed of light:
 Suppose a certain pattern is contained in a 100-by-100-pixel square. Everything outside the square is in the off state. No matter what the structure of the pattern, it can influence only the pixels bordering the square in the next generation. It will then be contained in a 102-by-102-pixel square. At very most, a pattern can grow one pixel per generation in any direction. 
@@ -155,6 +151,8 @@ Is pain actually bad?
 Pain is just a signal that tells you to stop doing something
 
 ---- THE GREAT MACHINE
+
+R-pentomino: not random
 
 Alright, let's just rip the Band-Aid off: no, you don't have free will. Sorry.
 But I also think free will means a lot of things to different people, so your conception of free will might be compatible with a fully deterministic universe.
